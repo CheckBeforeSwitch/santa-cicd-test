@@ -1,0 +1,52 @@
+<section id="fv">
+	<div class="fv-area">
+		<img src="top_1.jpg" alt="">	
+	</div>
+	<div class="text_area">
+		施設概要
+	</div>
+</section>
+<section id="company_about">
+	<div class="h2_wrapper">
+		<div class="ball"></div>
+		<h2>施設概要</h2>
+		<div class="border"></div>
+	</div>
+	<dl>
+		<div>
+			<dt>施設名</dt><!--
+			--><dd>グループホーム サンタクロース</dd>
+		</div>
+		<div>
+			<dt>代表者</dt><!--
+			--><dd>
+				<ruby>
+				<rb>高山賢仁</rb>
+				<rp>（<rt>タカヤマヨシヒト<rp>）
+				</ruby>
+		    </dd>
+		</div>
+		<div>
+			<dt>所在地</dt><!--
+			--><dd>長野県埴科郡坂城町大字南条657‐1</dd>
+		</div>
+		<div>
+			<dt>電話番号</dt><!--
+			--><dd>0268-81-3611</dd>
+		</div>
+		<div>
+			<dt>入居定員</dt><!--
+			--><dd>18名(1ユニット 9名)</dd>
+		</div>
+	</dl>
+</section>
+<section id="access">
+	<div class="h2_wrapper">
+		<div class="ball"></div>
+		<h2>アクセス</h2>
+		<div class="border"></div>
+	</div>
+	<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12840.79625057679!2d138.19424!3d36.428569!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2d3dfbf78d35a5c1!2z44Kw44Or44O844OX44Ob44O844Og44K144Oz44K_44Kv44Ot44O844K5!5e0!3m2!1sja!2sjp!4v1649134136774!5m2!1sja!2sjp" max-width="1000" width="90%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+</section>

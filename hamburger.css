@@ -1,0 +1,139 @@
+@charset "utf-8";
+/************************
+
+ ハンバーガーメニュー共通CSS
+
+ **************************/
+
+/* アイコン */
+.hamburger_icon {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10000;
+    margin: 20px;
+}
+
+@media (min-width:680px) {
+    .hamburger_icon {
+        display: none;
+    }
+}
+
+.hamburger_icon .lines {
+    width: 100%;
+    height: 3px;
+    background: #CB2E27;
+    border-radius: 4px;
+    position: absolute;
+    transition: all .5s;
+}
+
+.lines:nth-of-type(1) {
+    top: 0;
+}
+
+.lines:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lines:nth-of-type(3) {
+    bottom: 0;
+}
+
+/****************
+アクティブ化
+*/
+.hamburger_icon.in {
+    position: fixed;
+    right: 0;
+}
+
+.hamburger_icon.in .lines:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 50%;
+}
+
+.hamburger_icon.in .lines:nth-of-type(2) {
+    opacity: 0;
+}
+
+.hamburger_icon.in .lines:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 50%;
+}
+
+/* ハンバーガーメニュー */
+
+.hamburger_nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 9999;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    transition: all .5s;
+    background: white;
+}
+
+.hamburger_nav .menu_wrapper {
+    height: 100%;
+    overflow: auto;
+    background-color: #CB2E27;
+    width: 85%;
+    margin-left: auto;
+}
+
+.hamburger_nav ul {
+    margin-top: 40px;
+    list-style: none;
+    padding-left: 0;
+    margin: 60px 0 0 20px;
+}
+.hamburger_nav ul li:not(:last-child) {
+    max-width: 90%;
+    background-image : linear-gradient(to right, #ccc 4px, transparent 4px);
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+    background-position: left bottom;
+}
+.hamburger_nav ul li a {
+    color: #CB2E27;
+    text-decoration: none;
+    display: block;
+    padding: 20px 8px;
+}
+
+.h_tel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 75%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px 0 rgba(220, 220, 220, 0.5);
+}
+
+.h_tel img {
+    width: 32px;
+    height: 32px;
+}
+
+.h_tel a {
+    font-size: 20px;
+}
+
+/****************
+アクティブ化
+*/
+.hamburger_nav.in {
+    left: 0;
+    opacity: 1;
+    background-color: #f5f1ed;
+}

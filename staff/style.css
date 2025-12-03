@@ -1,0 +1,77 @@
+li {
+    list-style: none;
+}
+
+.fv-area > img {
+    object-position: 100% 42%;
+}
+
+.intro {
+    width: fit-content;
+    margin: auto;
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+.staff-list {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 60px auto;
+    padding: 0;
+}
+
+.card {
+    min-width: 280px;
+    flex-basis: calc(33% - 50px);
+    height: 400px;
+    perspective: 1000px;
+    background-color: #fff;
+    border-radius: 1rem;
+    border: 1px solid #CB2E27;
+    box-shadow: 0 0.6px 6px #CB2E27;
+}
+
+.card img {
+    height: 65%;
+    width: 100%;
+    background-color: gray;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+}
+
+.card .in {
+    padding: 10px 20px;
+    background-color: #CB2E27;
+    color: #fff;
+    font-weight: bold;
+    width: fit-content;
+    position: relative;
+    left: -20px;
+    bottom: 50px;
+}
+
+.card .inner {
+    position: relative;
+    bottom: 70px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.card .inner .position {
+    color: #CB2E27;
+    font-weight: bold;
+    width: fit-content;
+    margin-left: 30px;
+}
+
+.card .inner .name {
+    font-weight: bold;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 24px;
+}

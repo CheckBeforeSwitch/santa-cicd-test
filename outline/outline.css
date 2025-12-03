@@ -1,0 +1,90 @@
+.madori-div {
+	text-align: center;
+	position: relative;
+	max-width: 1000px;
+	margin: 0 auto;
+}	
+
+.madori-div .box-1{
+	float: right;
+	width: 40%;
+	height: 40vw;
+}
+
+.madori-div .madori-desc{
+	margin-top: -40vw;
+	display: flow-root;
+	overflow: auto;
+}
+
+@media (min-width: 1000px) {
+	.madori-div .box-1 {
+		height: 400px;
+	}
+
+	.madori-div .madori-desc {
+		margin-top: -400px;
+	}
+}
+.madori-list {
+	padding: 0;
+	display: block;
+	text-align: left;
+}
+
+.madori-list li {
+	list-style: none;
+	display: inline-block;
+	margin: 4px 10px;
+}		
+
+.madori-list li a {
+	font-size: 18px;
+	margin-right: 6px;
+	text-decoration: underline;
+	width: fit-content;
+}	
+
+.list-ban {
+	width: 30px;
+	height: 30px;
+	font-size: 20px;
+	background-color: #CB2E27;
+	color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	margin: 10px;
+}
+
+.madori-photo{
+	width: 100%;
+	height: auto;
+}
+
+/* 詳しく見る */
+.br {
+	display: inline-block;
+}
+
+.detail {
+	max-width: 1100px;
+	margin: 50px auto;
+}
+
+.detail .btns {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+
+.detail .btns .btn_1 {
+	max-width: 250px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+

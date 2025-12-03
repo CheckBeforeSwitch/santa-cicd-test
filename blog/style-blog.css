@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+#blog_art  p {
+    max-width: 640px;
+    margin-right:auto ;
+    margin-left: auto;
+}
+#blog_art .media {
+    margin: 32px auto;
+    width: 100%;
+    max-width: 480px;
+    max-height: 95vh;
+}
+
+#blog_art .media img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 480px;
+    max-height: 95vh;
+    object-fit: contain;
+}
+
+.heading {
+    max-width: fit-content;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+article table {
+    margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+    #blog_art {
+        text-align: left;
+    }   
+}
+
+@media (min-width: 800px) {
+    #blog_art .flexbox {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    #blog_art .flexbox > * {
+        margin: 16px auto;
+        max-width: 480px;
+        padding: 0 8px;
+        flex-basis: 48%;
+    }
+}
+
+/******************
+
+一覧ページCSS
+
+********************/
+#blog-list {
+    font-size: 0.75em;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+    #blog-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.nitizyou_box {
+    margin: 16px auto;
+    max-width: 480px;
+    padding: 0 8px;
+    box-sizing: border-box;
+    color: #000000;
+    text-decoration: none;
+}
+
+.nitizyou_box .content {
+    padding: 4px 8px;
+}
+
+.nitizyou_box time {
+    font-weight: bold;
+    color: #000000;
+}
+
+.nitizyou_box .title {
+    color: #CB2E27;
+    margin: 8px 0;
+}
+
+.nitizyou_box:hover .title {
+    text-decoration: underline;
+}
+
+.nitizyou_box .title .circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #ececec;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.15);
+    display: inline-block;
+}
+
+.nitizyou_box .title .circle,
+.nitizyou_box .title span {
+    vertical-align: middle;
+}
+
+.nitizyou_box .title span {
+    margin-left: 16px;
+}
+
+.nitizyou_box .thumbs {
+    max-width: 480px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.nitizyou_box .thumbs img {
+    display: block;
+    width: 100%;
+    transition: all .25s;
+}
+
+.nitizyou_box:hover .thumbs img {
+    transform: scale(1.1);
+}
+
+.nitizyou_box .link {
+    display: block;
+    text-decoration: none;
+    padding: 4px 8px;
+    width: 80%;
+    max-width: 120px;
+    box-sizing: border-box;
+    margin: 16px auto;
+    background: #FFFFFF;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+}
+.nitizyou_box .link:hover{
+    color: #CB2E27;
+}
+
+@media (min-width: 900px) {
+    .nitizyou_box_wrapper {
+        max-width: 1080px;
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .nitizyou_box_wrapper > * {
+        flex-basis: 49%;
+        box-sizing: border-box;
+        margin: 16px 0;
+        max-width: none;
+    }
+}
+
+@media (min-width: 1080px) {
+    .nitizyou_box_wrapper > * {
+        flex-basis: 30%;
+        box-sizing: border-box;
+    }
+}
+
+.breadcrumb{
+    max-width: 1280px;
+    padding: 0 8px;
+    color: #CB2E27;
+    margin: 32px auto;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.breadcrumb .marker {
+    color: #000000;
+    margin: 0 4px;
+}
+
+/* テーブルについて */
+
+.system,.system td,.system th {
+    border: #000000 solid 1px;
+    text-align: center;
+}
+
+.system td,.system th {
+  border-top-width: 0;
+  border-left-width: 0;
+}
+
+.system th:last-child,
+.system td:last-child {
+  border-right-width: 0;
+}
+
+.system tbody tr:last-child td,.system .bottom,
+.system tbody tr:last-child th,.system tfoot td {
+  border-bottom-width: 0;
+}
+
+.system tbody tr td.btm {
+    border-bottom: 1px solid black;
+}
+
+.system tbody tr td.right {
+    border-right: 1px solid black;
+}
+
+.system .empty {
+    width: 4em;
+}
+
+.empty {
+    width: 8em;
+}
+
+
+#blog_art p.name {
+    text-align: right;
+}
+
+
+#blog_art .ex {
+    border: #000000 solid 1px;
+    padding: 4px;
+}

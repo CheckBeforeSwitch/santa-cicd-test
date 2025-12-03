@@ -1,0 +1,14 @@
+<svg version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    width="30" height="30"
+    viewBox="0 0 30 20"
+    fill="white"
+    stroke="#4bced4"
+    stroke-width="4"
+    stroke-linecap="aquare"
+    stroke-linejoin="round"
+    preserveAspectRatio="none">
+    <path d="M4 4
+        L15 13
+        L26 4" />
+</svg>

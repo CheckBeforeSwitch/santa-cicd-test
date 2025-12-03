@@ -1,0 +1,374 @@
+@charset "UTF-8";
+
+.about .content {
+    background: #FFF;
+    padding: 16px;
+    margin-top: 20px;
+}
+
+@media (min-width: 800px) {
+    .about .content {
+        columns: 2;
+    }
+    .about .content p {
+        margin-top: 0px;
+        margin-bottom: 16px;
+    }
+}
+
+.about .media_wrapper {
+    /* margin: 32px -16px; */
+    overflow: hidden;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.about .media {
+    display: block;
+    width: 100%;
+}
+
+
+
+/* ご入居の流れ */
+.flow_1 .flow_list > div {
+    position: relative;
+    margin: 32px 0 48px;
+}
+
+.flow_1 .flow_list .index {
+    color: #CB2E27;
+    font-size: 56px;
+    position: relative;
+}
+
+.flow_1 .flow_list > div .index::after {
+    content: "";
+    width: 86%;
+    height: 30px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    top: 26px;
+    border-style: solid;
+    border-width: 0 60px 0 0;
+    border-image-source: url("../arrow-to-right.svg");
+    border-image-slice: 0 60 0 0 fill;
+    border-image-repeat: stretch;
+}
+
+.flow_1 .flow_list .title {
+    text-align: center;
+    margin-top: 0;
+}
+
+.flow_1 .flow_list .picture {
+    display: block;
+    width: 64px;
+    margin: 0 auto 16px;
+}
+
+.flow_1 .flow_list .content {
+    background: #FFF;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+@media (min-width: 800px) {
+    .flow_1 .flow_list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .flow_1 .flow_list > div {
+        flex-basis: 48%;
+    }
+
+    .flow_1 .flow_list .title br {
+        display: none;
+        
+    }
+}
+
+/* ご入居の手続きに必要なもの */
+.flow_1 .required_items .item_list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 550px;
+    margin: 16px auto;
+}
+
+.flow_1 .required_items .item_list li {
+    color: #4BCED4;
+    border: solid 2px #4BCED4;
+    background: #FFF;
+    padding: 16px;
+    border-radius: 16px;
+    font-weight: bold;
+    flex-basis: 46%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (min-width: 800px) {
+    .flow_1 .required_items .item_list {
+        max-width: 1000px;
+    }
+
+    .flow_1 .required_items .item_list li {
+        flex-basis: 18%;
+    }
+
+    .table_a .table_1  {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .flow_1 .required_items .item_list {
+        width: auto;
+    }
+
+    .flow_1 .required_items .item_list li {
+        font-size: 20px;
+    }
+ }
+
+.flow_1 .required_items .notice_box {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 利用料について */
+@media (min-width: 800px) {
+    #goriyoryokin .flex_wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #goriyoryokin .flex_wrapper > div {
+        flex-basis: 48%;
+    }
+}
+
+.table_1 {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table_1 th,
+.table_1 td {
+    border: solid 1px #333;
+    text-align: center;
+    padding: 32px 0;
+
+}
+
+.table_1 th {
+    background: #4BCED4;
+}
+
+.table_1 td {
+    background: #FFF;
+}
+
+/* .columns{
+    column-count:2;
+} */
+
+ul{
+    list-style-type: circle;
+}
+
+
+
+@media (min-width: 800px) {
+    .tabele_1 .table_a{
+        display: inline-block;
+        width:40%;
+        margin: 0;
+    }
+    
+}
+
+
+
+
+.box{
+    background: #FFF;
+    padding: 16px;
+}
+
+
+/* 上記の内訳　※冬季は～ */
+.left {
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media (min-width:800px) {
+    .left{
+        text-align: right;
+    }
+    
+}
+
+.heading_blue_ball {
+    position: relative;
+    padding-left: 48px;
+}
+
+.heading_blue_ball::after {
+    content: "";
+    background: #4BCED4;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.red{
+    color:#CB2E27
+}
+
+
+
+/* ご入居について　先頭のリンクボタン */
+.link_botann {
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.link_botann {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.link_botann > * {
+    flex-basis: 48%;
+    box-sizing: border-box;
+}
+
+.link_botann a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F1ED;
+    padding: 8px 8px 30px;
+    margin: 16px 0;
+    border-radius: 16px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 6px 5px rgba(0, 0, 0, 0.15);
+    color:#333;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+}
+
+.link_botann a img {
+    display: block;
+    width: 24px;
+    height: 18px;
+    margin: auto;
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+    left: 0;
+}
+
+@media (min-width:800px) {
+    .link_botann > * {
+        flex-basis: 30%;
+    }
+}
+
+/* 注意事項　お問い合わせ */
+.box {
+    text-align: center;
+    padding: 20px;
+}
+
+ box a{
+    text-decoration: none;
+}
+
+@media (min-width:800px) {
+    .box .case {
+        width: 40%;
+        margin: 0;
+        display: inline-block;
+    }
+
+    .box .border {
+        width: 3px;
+        height: 50px;
+        display: inline-block;
+        margin: auto;
+    }
+
+    .box .border.border_2 {
+        display: none;
+    }
+
+}
+
+
+
+@media (min-width:800px){
+    br{
+        display: none;
+    }
+}
+
+.basic_block {
+    max-width: 1100px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* .text{
+    text-align: left;
+}
+
+@media (min-width:800px) {
+    .text{
+        text-align: center;
+    }
+} */
+
+
+.link_o{
+    text-decoration: none;
+    color: black;
+    
+    
+}
+
+@media (min-width:800px) {
+    .text_3{
+        text-align: center;
+    }
+}
+
+
+
+
