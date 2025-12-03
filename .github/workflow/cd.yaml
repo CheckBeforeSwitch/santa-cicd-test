@@ -1,0 +1,36 @@
+name: 1.CD (Password認証)
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy-production:
+    name: パスワードでデプロイ
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install sshpass
+        run: sudo apt-get install -y sshpass
+
+      - name: known hosts(対話式になると詰むから事前に書き込む)
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -H ${{ secrets.SAKURA_HOST }} >> ~/.ssh/known_hosts
+
+      # sshpassを使ってRsync実行
+      - name: Rsync処理
+        env:
+          # Secretに登録したパスワードを環境変数に入れる
+          SSHPASS: ${{ secrets.SSH_PASSWORD }}
+        run: |
+          echo "パスワード方式でデプロイ開始..."
+
+          TARGET_DIR="/home/nrserver2/www/dev/cicd-santa-test"
+
+          # sshpass -e : 環境変数SSHPASSの値をパスワードとして入力する
+          sshpass -e rsync -avzc --delete --omit-dir-times --exclude '.git*' --exclude '.github*' -e ssh ./ ${{ secrets.SAKURA_USERNAME }}@${{ secrets.SAKURA_HOST }}:$TARGET_DIR
+
+          echo "デプロイ完了！"
