@@ -10,14 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
+        # 
 
       - name: Install sshpass
         run: sudo apt-get install -y sshpass
 
-      - name: known hosts(対話式になると詰むから事前に書き込む)
+      - name: known_hostsに書き込み(対話式になると詰むから事前に書き込む)
         run: |
-          mkdir -p ~/.ssh
+          mkdir ~/.ssh
           ssh-keyscan -H ${{ secrets.SAKURA_HOST }} >> ~/.ssh/known_hosts
 
       # sshpassを使ってRsync実行
