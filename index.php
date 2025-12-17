@@ -90,7 +90,7 @@ $canonical = 'https://sakaki-santaclaus.jp/';
 					<img src="union.svg" alt="">
 				</div>
 				<div class="info-content">
-					<p class="info">重要なお知らせ</p>
+					<p class="info">重要お知らせ</p>
 					<p class="info-txt">
 						現在空室はございません。
 					</p>
